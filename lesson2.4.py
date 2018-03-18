@@ -26,7 +26,6 @@ def creating_file_list(input_info, files_list, migration_abs_path=get_abspath())
 def core():
     migration_abs_path = get_abspath()
     files_list = [f for f in os.listdir(migration_abs_path) if f.endswith('.sql')]
-
     while True:
         search_info = input('Введите строку: ')
         file_list_info = creating_file_list(search_info, files_list, migration_abs_path)
